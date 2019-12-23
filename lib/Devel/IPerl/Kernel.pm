@@ -4,6 +4,9 @@ use strict;
 use warnings;
 use namespace::autoclean;
 
+use utf8;
+use open qw(:std :encoding(UTF-8));  # set encoding of standard streams
+
 use Moo;
 use Env qw(@PATH);
 use if $^O eq 'MSWin32', 'Alien::ZMQ::latest';
